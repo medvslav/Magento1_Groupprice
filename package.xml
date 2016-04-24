@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Medvslav_Groupprice</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/mit-license.php">Massachusetts Institute of Technology License (MITL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Module for changing the default pricing behaviour of group prices.</summary>
+    <description>- By default, Magento will display the lowest price of either a group price or the base selling price. This module change that behaviour, Magento use only the group sell price if one is assigned, and to ignore the base selling price even if the base price is lower. &#xD;
+- After installing this module the Group price of products that assigned in the Admin Panel in the Product Edit Page (Catalog-&gt;Manage Products-&gt;Product Edit Page-&gt;Prices) will be displayed on product page even if it is larger than the price of product.&#xD;
+- Group price will be used for product in the shopping cart  and for calculation of the total price.</description>
+    <notes>Installation of the extension needs to be done through Magento Connect in the administrative part of the site.&#xD;
+&#xD;
+</notes>
+    <authors><author><name>Yaroslav</name><user>Medved</user><email>medvslav@gmail.com</email></author></authors>
+    <date>2016-04-17</date>
+    <time>20:06:36</time>
+    <contents><target name="magelocal"><dir name="Medvslav"><dir name="Groupprice"><dir name="Model"><dir name="Product"><dir name="Type"><file name="Price.php" hash="2277a251da06ed8552b83fe765333e11"/></dir></dir><file name="Product.php" hash="b27d2982f2b646ecda46af8ce256bfc4"/></dir><dir name="etc"><file name="config.xml" hash="de32a6f09401db0daef8848aa3d083b4"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Medvslav_Groupprice.xml" hash="42ea0ff1e2604ead0b193f2aa4964538"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.30</min><max>5.5.9</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.8</min><max>1.9.2</max></package></required></dependencies>
+</package>

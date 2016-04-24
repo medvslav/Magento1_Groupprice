@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Medvslav_Groupprice extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Medvslav
+ * @package        Medvslav_Groupprice
+ * @copyright      Copyright (c) 2016
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Medvslav_Groupprice>
+            <version>1.0.0</version>
+        </Medvslav_Groupprice>
+    </modules>
+    <global>
+        <models>
+            <medvslav_groupprice>
+                <class>Medvslav_Groupprice_Model</class>
+            </medvslav_groupprice>
+            <catalog>                        
+                <rewrite>                               
+                     <product>Medvslav_Groupprice_Model_Product</product>
+                     <product_type_price>Medvslav_Groupprice_Model_Product_Type_Price</product_type_price>
+                </rewrite>                       
+            </catalog>
+        </models>
+    </global>
+</config>
